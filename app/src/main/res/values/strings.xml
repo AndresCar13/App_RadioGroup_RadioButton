@@ -6,4 +6,6 @@
     <string name="restar">Restar</string>
     <string name="calcular">Calcular</string>
     <string name="resultado">Resultado</string>
+    <string name="multiplicar">Multiplicar</string>
+    <string name="dividir">Dividir</string>
 </resources>

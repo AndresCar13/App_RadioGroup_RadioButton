@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private EditText et1, et2;
     private TextView tv1;
-    private RadioButton rb1, rb2;
+    private RadioButton rb1, rb2, rb3, rb4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         tv1 = findViewById(R.id.tv_res);
         rb1 = findViewById(R.id.rb_sumar);
         rb2 = findViewById(R.id.rb_restar);
+        rb3 = findViewById(R.id.rb_multiplicar);
+        rb4 = findViewById(R.id.rb_dividir);
     }
 
     public void Calcular (View view) {
@@ -38,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
             res = valor1_int + valor2_int;
         } else if (rb2.isChecked()) {
             res = valor1_int - valor2_int;
+        } else if (rb3.isChecked()) {
+            res = valor1_int * valor2_int;
+        } else if (rb4.isChecked()) {
+            res = valor1_int / valor2_int;
         } else {
             res = 0;
         }
